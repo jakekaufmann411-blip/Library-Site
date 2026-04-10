@@ -7,7 +7,8 @@
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3548aa8b0b.js" crossorigin="anonymous"></script>
-    
+    <script src="index.js"></script>
+
 </head>
 
 <body>
@@ -20,6 +21,26 @@
                     <li><a href="#" class="nav__link">Contact</a></li>
                     <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
                 </ul>
+            
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars" style="color: #7342d6;"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-x" style="color: #7342d6;"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link onclick="closeMenu()"">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link onclick="closeMenu()"">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link no-cursor onclick="closeMenu()"">Contacts</a>
+                    </li>
+                </ul>
+             </div>
             </div>
         </nav>
         <header>
@@ -27,7 +48,9 @@
                 <div class="header__description">
                     <h1>America's Most Awarded Online Library Platform</h1>
                     <h2>Find Your Dream Book With <span class="purple">Library</span></h2>
-                    <button class="btn">Browse Books</button>
+                    <a href="#features">
+                        <button class="btn">Browse Books</button>
+                    </a>
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="Undraw_Books.svg" alt="">
@@ -65,7 +88,7 @@
                                 Library has books in all your favorite categories
                             </p>
                         </div>
-                         <div class="highlight">
+                        <div class="highlight">
                             <div class="highlight__image">
                                 <i class="fa-solid fa-tags" style="color: rgb(115, 66, 214);"></i>
                             </div>
@@ -75,24 +98,274 @@
                             <p class="highlight__para">
                                 Get your hands on popular books for as little as $10
                             </p>
-                        </div>                                              
-                    </div>
-        </section>
-            <section id="feautures">
-                <div class="container">
-                    <div class="row">
-
-                    </div>
-                </div>
-                <section id="latest">
-                    <div class="container">
-                        <div class="row">
-
                         </div>
                     </div>
-            </section>
-    </main>
+        </section>
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="purple">Books</span>
+                    </h2>
+                    <div class="books">
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="crack the coding interview.png" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Cracking The Coding Interview
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.95</span> $14.95
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="atomic habits.jpg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Atomic Habits
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.95</span> $14.95
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="david goggins.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Can't Hurt Me
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.95</span> $14.95
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="deep work.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Deep Work
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.95</span> $14.95
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row__latest">
+                    <h2 class="section__title--latest">
+                        Latest <span class="purple">Books</span>
+                    </h2>
+                    <div class="books">
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-1.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                The 10x Rule
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
 
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-2.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Be obsessed or Be Average
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-3.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Rich Dad Poor Dad
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-4.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Cashflow Quadrant
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-5.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Power
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-6.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                The 5 Second Rule
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-7.jpg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Your Next Five Moves
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="book-8.jpeg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Mastery
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star-half" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--latest">$59.95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="explore">
+            <div class="container">
+                <div class="row row__column">
+                    <h2>Explore More <span class="purple">Books</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse Books</button>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="Library.svg" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Books</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2026 Library</div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
